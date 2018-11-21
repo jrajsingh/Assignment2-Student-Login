@@ -1,0 +1,95 @@
+<div style="padding: 15px" id="body">
+  <br/>
+  <br/>
+  <style>
+    #student_table, #user_input_student {
+      width: 100%;
+    }
+
+    #student_table th, td {
+      padding: 15px;
+      text-align: left;
+      border: 1px solid black;
+    }
+
+    #user_input_student th, td {
+      padding: 15px;
+      text-align: left;
+      border: 1px solid black;
+    }
+  </style>
+  <% @my_students = Student.all %>
+  <% if @my_students != nil %>
+    <script type="text/javascript">
+        console.log("Inside IF Statement Line 23 student.erb");
+    </script>
+    <h1>List of Students</h1>
+    <table id="student_table">
+      <tr>
+        <th>Student ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Birthday</th>
+        <th>Address</th>
+      </tr>
+      <% @my_students.each do |stu| %>
+        <tr>
+          <td><%= stu.id_num %></td>
+          <td><%= stu.first_name %></td>
+          <td><%= stu.last_name %></td>
+          <td><%= stu.birthday %></td>
+          <td><%= stu.address %></td>
+        </tr>
+      <% end %>
+    </table>
+  <% else %>
+    <script type="text/javascript">
+        console.log("Inside ELSE Statement Line 47 student.erb");
+    </script>
+    <h1 style="text-align: center;">There are no Students in the database</h1>
+  <% end %>
+  <br/>
+  <br/>
+  <hr>
+  <br/>
+  <br/>
+  <div>
+    <h1>Add a new Student!!</h1>
+    <form action="/students" method="get">
+      <table id="user_input_student">
+        <tr>
+          <th>Student ID :</th>
+          <td>
+            <input id="student_id" type="text" name="student_id" placeholder="Student ID ..." style="width: 100%;">
+          </td>
+        </tr>
+        <tr>
+          <th>Student's First name :</th>
+          <td>
+            <input id="student_first_name" type="text" name="student_first_name" placeholder="Student's First Name ..." style="width: 100%;">
+          </td>
+        </tr>
+        <tr>
+          <th>Student's Last name :</th>
+          <td>
+            <input id="student_last_name" type="text" name="student_last_name" placeholder="Student's Last Name ..." style="width: 100%;">
+          </td>
+        </tr>
+        <tr>
+          <th>Student's Birthday :</th>
+          <td>
+            <input id="student_birthday" type="date" name="student_birthday" placeholder="Student's Birthday" style="width: 100%;">
+          </td>
+        </tr>
+        <tr>
+          <th>Student's Address :</th>
+          <td>
+            <input id="student_address" type="text" name="student_address" placeholder="Student's Address" style="width: 100%;">
+          </td>
+        </tr>
+      </table>
+      <br/>
+      <button type="submit">Add Student</button>
+    </form>
+  </div>
+</div>
