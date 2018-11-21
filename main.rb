@@ -4,8 +4,6 @@ require 'erb'
 require_relative 'comment'
 require_relative 'student'
 
-require_relative 'implemented_classes'
-
 configure do
   enable :sessions
 end
@@ -42,14 +40,22 @@ get '/logout' do
   redirect '/login'
 end
 
-# get '/comment' do
-#   @my_comment = Comment.all
-#   erb :comment, :layout => :comment_layout
-# end
-
-get '/students' do
-
+get '/comment' do
+  if params.length != 0
+    name = params[:commenter_name].to_s
+    content = params[:comment_content].to_s
+    params[:commenter_name] = nil
+    params[:comment_content] = nil
+    url.sub(/\?$/, '')
+    redirect url
+  end
+  @my_comment = Comment.all
+  if @my_comment.empty?
+    @my_comment = nil
+  end
+  erb :comment, :layout => :comment_layout
 end
+
 
 not_found do
   erb :not_found, :layout => :not_found_layout
