@@ -5,8 +5,8 @@ gem "sass"
 gem "data_mapper"
 gem "dm-core"
 gem "dm-migrations"
-gem "pg", :group => :development
-gem "dm-sqlite-adapter", :group => :production
-gem "dm-postgres-adapter", :group => :development
+gem "pg", :group => :production
+gem "dm-sqlite-adapter", :group => :development
+gem "dm-postgres-adapter", :group => :production
 gem "puma"
 gem "thin"
