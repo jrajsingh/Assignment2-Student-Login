@@ -9,5 +9,4 @@ gem "pg", :group => :production
 gem "dm-postgres-adapter", :group => :production
 gem "dm-sqlite-adapter", :group => :development
 gem "puma"
-gem "sqlite3"
 gem "thin"

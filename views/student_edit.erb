@@ -1,0 +1,42 @@
+<form action="/students_edit" method="get">
+  <table id="user_input_student">
+    <tr>
+      <th>Student ID :</th>
+      <td>
+        <input id="student_id" type="text" name="student_id" value="<%= @edit_student.id_num %>" style="width: 100%;">
+      </td>
+    </tr>
+    <tr>
+      <th>Student's First name :</th>
+      <td>
+        <input id="student_first_name" type="text" name="student_first_name" value="<%= @edit_student.first_name %>" style="width: 100%;">
+      </td>
+    </tr>
+    <tr>
+      <th>Student's Last name :</th>
+      <td>
+        <input id="student_last_name" type="text" name="student_last_name" value="<%= @edit_student.last_name %>" style="width: 100%;">
+      </td>
+    </tr>
+    <tr>
+      <th>Student's Birthday :</th>
+      <td>
+        <input id="student_birthday" type="date" name="student_birthday" value="<%= @edit_student.birthday %>" style="width: 100%;">
+      </td>
+    </tr>
+    <tr>
+      <th>Student's Address :</th>
+      <td>
+        <input id="student_address" type="text" name="student_address" value="<%= @edit_student.address %>" style="width: 100%;">
+      </td>
+    </tr>
+    <tr>
+      <th>Student's GPA : </th>
+      <td>
+        <input id="student_gpa" type="text" name="student_gpa" value="<%= @edit_student.gpa %>" style="width: 100%">
+      </td>
+    </tr>
+  </table>
+  <br/>
+  <button type="submit">Finished Editing Student</button>
+</form>

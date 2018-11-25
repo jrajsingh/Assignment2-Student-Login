@@ -20,9 +20,6 @@
   </style>
   <% @my_students = Student.all %>
   <% if @my_students != nil %>
-    <script type="text/javascript">
-        console.log("Inside IF Statement Line 23 student.erb");
-    </script>
     <h1>List of Students</h1>
     <table id="student_table">
       <tr>
@@ -31,14 +28,20 @@
         <th>Last Name</th>
         <th>Birthday</th>
         <th>Address</th>
+        <th>GPA</th>
+        <th>Edit Student</th>
+        <th>Delete Student</th>
       </tr>
       <% @my_students.each do |stu| %>
         <tr>
-          <td><%= stu.id_num %></td>
+          <td><a href="/students_display?student_id=<%= stu.id_num %>"><%= stu.id_num %></a></td>
           <td><%= stu.first_name %></td>
           <td><%= stu.last_name %></td>
           <td><%= stu.birthday %></td>
           <td><%= stu.address %></td>
+          <td><%= stu.gpa %></td>
+          <td><a href="/students_edit?student_id=<%= stu.id_num %>">Edit</a></td>
+          <td><a href="/students_delete?student_id=<%= stu.id_num %>">Delete</a></td>
         </tr>
       <% end %>
     </table>
@@ -85,6 +88,12 @@
           <th>Student's Address :</th>
           <td>
             <input id="student_address" type="text" name="student_address" placeholder="Student's Address" style="width: 100%;">
+          </td>
+        </tr>
+        <tr>
+          <th>Student's GPA : </th>
+          <td>
+            <input id="student_gpa" type="text" name="student_gpa" placeholder="0.00" style="width: 100%">
           </td>
         </tr>
       </table>

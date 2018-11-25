@@ -23,7 +23,7 @@ post '/login' do
   @password = params[:password]
   if user_login.key?(@username.to_sym)
     if user_login[@username.to_sym] == @password
-      redirect '/home'
+      redirect '/students'
     else
       redirect '/login'
     end
@@ -38,22 +38,6 @@ end
 
 get '/logout' do
   redirect '/login'
-end
-
-get '/comment' do
-  if params.length != 0
-    name = params[:commenter_name].to_s
-    content = params[:comment_content].to_s
-    params[:commenter_name] = nil
-    params[:comment_content] = nil
-    url.sub(/\?$/, '')
-    redirect url
-  end
-  @my_comment = Comment.all
-  if @my_comment.empty?
-    @my_comment = nil
-  end
-  erb :comment, :layout => :comment_layout
 end
 
 

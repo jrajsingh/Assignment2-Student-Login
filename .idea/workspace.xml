@@ -3,8 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="937e4554-65a1-4723-95d8-92593ab8e82d" name="Default Changelist" comment="Finished Implementing Student &amp; Comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implemented_classes.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-sinatra.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-sinatra.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/comment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databases.db" beforeDir="false" afterPath="$PROJECT_DIR$/databases.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student.rb" beforeDir="false" afterPath="$PROJECT_DIR$/student.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/comment_layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/comment_layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/homelayout.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/not_found_layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/not_found_layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/student.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/student.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/student_layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/student_layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/video_layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/video_layout.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +74,7 @@
     <session id="-938912622">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -80,7 +90,7 @@
           <entry key="Gemfile" value="2" />
           <entry key="comments" value="2" />
           <entry key="css" value="6" />
-          <entry key="erb" value="29" />
+          <entry key="erb" value="43" />
           <entry key="gitignore" value="2" />
           <entry key="jpg" value="1" />
           <entry key="png" value="1" />
@@ -94,7 +104,7 @@
           <entry key="Database Element" value="2" />
           <entry key="Image" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="RHTML" value="29" />
+          <entry key="RHTML" value="43" />
           <entry key="RNG Compact" value="1" />
           <entry key="Ruby" value="14" />
         </counts>
@@ -103,9 +113,9 @@
         <counts>
           <entry key="Gemfile" value="35" />
           <entry key="css" value="890" />
-          <entry key="erb" value="4064" />
+          <entry key="erb" value="5138" />
           <entry key="gitignore" value="1" />
-          <entry key="rb" value="3621" />
+          <entry key="rb" value="4755" />
           <entry key="txt" value="123" />
         </counts>
       </usages-collector>
@@ -113,8 +123,8 @@
         <counts>
           <entry key="CSS" value="890" />
           <entry key="PLAIN_TEXT" value="124" />
-          <entry key="RHTML" value="4064" />
-          <entry key="Ruby" value="3656" />
+          <entry key="RHTML" value="5138" />
+          <entry key="Ruby" value="4790" />
         </counts>
       </usages-collector>
     </session>
@@ -127,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="241">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -136,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="460">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -145,8 +155,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="218">
+              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/student_edit.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#3;n#table#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#4;n#table#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/student_edit_layout.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/student_display_layout.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/student_layout.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="8" selection-end-line="25" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -154,27 +206,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/student.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+            <state relative-caret-position="793">
+              <caret line="101" column="11" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="101" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#h1#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#0;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#0;n#tr#4;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/comment.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
-              <folding>
-                <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#tr#1;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -208,25 +247,30 @@
         <option value="$PROJECT_DIR$/views/notfoundlayout.erb" />
         <option value="$PROJECT_DIR$/views/not_found.erb" />
         <option value="$PROJECT_DIR$/public/w3.css" />
-        <option value="$PROJECT_DIR$/views/layout.erb" />
         <option value="$PROJECT_DIR$/views/login.erb" />
         <option value="$PROJECT_DIR$/views/loginlayout.erb" />
         <option value="$PROJECT_DIR$/temp.rb" />
         <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/views/video.erb" />
-        <option value="$PROJECT_DIR$/views/video_layout.erb" />
-        <option value="$PROJECT_DIR$/views/not_found_layout.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/views/commentlayout.erb" />
         <option value="$PROJECT_DIR$/views/homelayout.erb" />
-        <option value="$PROJECT_DIR$/views/student_layout.erb" />
         <option value="$PROJECT_DIR$/student.erb" />
         <option value="$PROJECT_DIR$/views/student.rb" />
         <option value="$PROJECT_DIR$/views/comment.erb" />
-        <option value="$PROJECT_DIR$/views/student.erb" />
         <option value="$PROJECT_DIR$/comment.rb" />
         <option value="$PROJECT_DIR$/main.rb" />
+        <option value="$PROJECT_DIR$/views/comment_layout.erb" />
+        <option value="$PROJECT_DIR$/views/not_found_layout.erb" />
+        <option value="$PROJECT_DIR$/views/student_layout.erb" />
+        <option value="$PROJECT_DIR$/views/video_layout.erb" />
+        <option value="$PROJECT_DIR$/views/layout.erb" />
+        <option value="$PROJECT_DIR$/views/student_display.erb" />
+        <option value="$PROJECT_DIR$/views/student_display_layout.erb" />
+        <option value="$PROJECT_DIR$/views/student.erb" />
+        <option value="$PROJECT_DIR$/views/student_edit_layout.erb" />
         <option value="$PROJECT_DIR$/student.rb" />
+        <option value="$PROJECT_DIR$/views/student_edit.erb" />
       </list>
     </option>
   </component>
@@ -242,9 +286,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="840" />
     <option name="y" value="23" />
-    <option name="width" value="1106" />
+    <option name="width" value="840" />
     <option name="height" value="1002" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -306,8 +351,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -384,13 +429,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48333000" />
+    <option name="totallyTimeSpent" value="55182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1002" extended-state="6" />
+    <frame x="840" y="23" width="840" height="1002" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="622" y="69" width="195" height="759" id="Project" order="0" weight="0.12087912" />
+      <window_info content_ui="combo" x="622" y="69" width="195" height="759" id="Project" order="0" weight="0.120300755" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24937344" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -441,13 +486,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/temp.rb" />
-    <entry file="file://$PROJECT_DIR$/views/layout.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/rubymine.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -484,27 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/video_layout.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/not_found_layout.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/loginlayout.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/not_found.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -527,62 +544,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/implemented_classes.rb">
+    <entry file="file://$PROJECT_DIR$/implemented_classes.rb" />
+    <entry file="file://$PROJECT_DIR$/views/comment.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="97" selection-start-column="97" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/student_layout.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/student.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+        <state relative-caret-position="-7">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="n#style#0;n#h1#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#0;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#0;n#tr#4;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#tr#1;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="460">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/comment.erb">
+    <entry file="file://$PROJECT_DIR$/views/video_layout.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        <state relative-caret-position="322">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/not_found_layout.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/loginlayout.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/comment_layout.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/student_display.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/student_display_layout.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/student.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="101" column="11" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="101" selection-end-column="11" />
           <folding>
-            <element signature="n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#tr#1;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#h1#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#3;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#4;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/student_edit_layout.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/student_layout.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="8" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/student_edit.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#3;n#table#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#4;n#table#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
