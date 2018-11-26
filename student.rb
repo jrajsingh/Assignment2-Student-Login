@@ -1,8 +1,6 @@
 require "dm-core"
 require "dm-migrations"
 
-DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/databases.db")
-
 class Student
   include DataMapper::Resource
   property :id_num, Serial
@@ -30,6 +28,9 @@ get '/students' do
     redirect url
   end
   @my_students = Student.all
+  if @my_students.length == 0
+    @my_students = nil
+  end
   erb :student, :layout => :student_layout
 end
 

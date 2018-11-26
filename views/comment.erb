@@ -18,8 +18,8 @@
       border: 1px solid black;
     }
   </style>
-  <% @my_comment = Comment.all %>
   <% if @my_comment != nil %>
+    <% puts "my_comment is not empty" %>
     <h1>List of Comments</h1>
     <table id="comment_table">
       <tr>
