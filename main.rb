@@ -21,6 +21,7 @@ end
 post '/login' do
   @username = params[:username]
   @password = params[:password]
+  session[:user] = @username
   if user_login.key?(@username.to_sym)
     if user_login[@username.to_sym] == @password
       redirect '/students'
