@@ -1,6 +1,6 @@
 require 'dm-core'
 require 'dm-migrations'
-
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3:databases.db")
 class Comment
   include DataMapper::Resource
   property :comment_id, Serial

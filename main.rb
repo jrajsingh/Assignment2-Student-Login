@@ -1,17 +1,11 @@
 require "sinatra"
-require "sinatra/reloader"
+require "sinatra/reloader" if development?
 require 'erb'
 require_relative 'comment'
 require_relative 'student'
 
 configure do
   enable :sessions
-end
-configure :development do
-  DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/databases.db")
-end
-configure :production do
-  DataMapper.setup(:default, "postgres://#{Dir.pwd}/production.db")
 end
 
 user_login = {student: 'student', admin: 'admin'}

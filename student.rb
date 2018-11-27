@@ -1,6 +1,6 @@
 require "dm-core"
 require "dm-migrations"
-
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3:databases.db")
 class Student
   include DataMapper::Resource
   property :id_num, Serial
