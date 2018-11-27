@@ -23,18 +23,20 @@
     <h1>List of Comments</h1>
     <table id="comment_table">
       <tr>
-        <th>Comment ID</th>
+<!--        <th>Comment ID</th>-->
         <th>Created At</th>
         <th>Commenter Name</th>
         <th>Content</th>
+        <th>Delete Comment</th>
       </tr>
 
       <% @my_comment.each do |com| %>
         <tr>
-          <td><%= com.comment_id %></td>
+<!--          <td><%#= com.comment_id %></td>-->
           <td><%= com.time_created %></td>
           <td><%= com.commenter_name %></td>
           <td><%= com.content %></td>
+          <td><a href="/comment_delete?comment_id=<%= com.comment_id %>">Delete Comment</a></td>
         </tr>
       <% end %>
     </table>

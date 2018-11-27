@@ -17,7 +17,7 @@ get '/comment' do
     content = params[:comment_content].to_s
     print "Name = #{name}\n Content = #{content}\n\t\t" +
              "Comment.new(commenter_name: name, content: content, time_created: Time.now).save.to_s = #{Comment.new(commenter_name: name, content: content, time_created: Time.now).save.to_s}\n"
-    Comment.new(commenter_name: name, content: content, time_created: Time.now).save.to_s
+    # Comment.new(commenter_name: name, content: content, time_created: Time.now).save.to_s
     url.sub(/\?$/,'')
     print "Redirecting to URL : #{url.to_s}"
     redirect url
@@ -30,4 +30,10 @@ get '/comment' do
   end
 
   erb :comment, :layout => :comment_layout
+end
+
+get '/comment_delete' do
+  comment_id = params[:comment_id]
+  Comment.all(comment_id: comment_id.to_i)[0].destroy
+  redirect '/comment'
 end
